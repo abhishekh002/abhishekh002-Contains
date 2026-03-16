@@ -11,6 +11,15 @@ public class Contains {
      * @return true if arr contains target, false otherwise.
      */
     public boolean arrayContains(int[] arr, int target){
+       // Loop through every index in the array
+        for (int i = 0; i < arr.length; i++) {
+            // Check if the current element matches our target
+            if (arr[i] == target) {
+                return true; // Found it! Exit the method early.
+            }
+        }
+        
+        // If the loop finishes, it means we never hit 'return true'
         return false;
     }
 }
